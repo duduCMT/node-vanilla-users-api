@@ -113,3 +113,32 @@ If you try to run the code, Node will return the following error:
 ```bash
 SyntaxError: Private field '#data' must be declared in an enclosing class
 ```
+
+### NodeJS File System
+
+Node has two modules for working with files.
+
+- `node:fs`
+- `node:fs/promises`
+
+Here's the difference between them:
+
+```javascript
+import fs from "node:fs";
+```
+
+`node:fs` uses methods with callback functions, an older and less practical execution model compared to promise systems.
+
+```javascript
+import fs from "node:fs/promises";
+```
+
+`node:fs/promises` uses the same engines, and file manipulation strategies as `node:fs`, with the difference being that it uses JavaScript's promise system. It has a more practical and readable syntax.
+
+Another difference is that methods related to Stream do not exist in `node:fs/promises`.
+
+### NodeJS File Constants
+
+In older versions of Node, it was common to use `__dirname` and other constants that referred to the project's file system. However, with the introduction of `"type": "module"`, these constants no longer work.
+
+Now, you should use strategies like `import.meta.url`.
