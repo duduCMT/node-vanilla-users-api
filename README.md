@@ -26,15 +26,9 @@ npm run dev
 
 ## Notations
 
-### Start NodeJS
+I'm recording here some important lessons learned during the project implementation.
 
-Starting NodeJS Project and skip settings
-
-```bash
-npm init -y
-```
-
-### About Imports
+### About Javascript Imports
 
 Using CommonJS
 
@@ -86,4 +80,36 @@ Date: Sun, 22 Feb 2026 15:33:11 GMT
 Keep-Alive: timeout=5
 
 Hello World
+```
+
+### Private Attributes in NodeJS Classes
+
+To make a attriubute private using nodeJS, it is conventional to use `#` at the beginning of declaration. Exemple:
+
+This is a public attribute
+
+```javascript
+export class Database {
+  data = {};
+}
+
+const database = new Database();
+console.log(database.data);
+```
+
+This is a private attribute
+
+```javascript
+export class Database {
+  #data = {};
+}
+
+const database = new Database();
+console.log(database.#data); // This doesn't work
+```
+
+If you try to run the code, Node will return the following error:
+
+```bash
+SyntaxError: Private field '#data' must be declared in an enclosing class
 ```
