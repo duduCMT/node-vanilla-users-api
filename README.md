@@ -1,4 +1,4 @@
-# Node Vanilla API
+# Node Vanilla Users API
 
 ## Description
 
