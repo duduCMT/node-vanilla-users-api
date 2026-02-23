@@ -1,8 +1,10 @@
-# NodeJS Fundamentals
+# Vanilla Node API
 
 ## Description
 
 Repository for learning and practicing NodeJS from the Rockeatseat Course.
+
+A user registration API built with pure Node.js, without external frameworks. Even the database layer is implemented using the native Node.js file system, storing and managing data directly within project files. This project demonstrates how to build a fully functional API from scratch using only core Node.js modules.
 
 ## Setup
 
