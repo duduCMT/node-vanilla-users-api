@@ -1,4 +1,4 @@
-# Vanilla Node API
+# Node Vanilla API
 
 ## Description
 

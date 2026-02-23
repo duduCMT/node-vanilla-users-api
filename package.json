@@ -1,5 +1,5 @@
 {
-  "name": "vanilla-node-api",
+  "name": "node-vanilla-api",
   "version": "1.0.0",
   "type": "module",
   "main": "src/server.js",
