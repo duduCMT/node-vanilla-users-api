@@ -142,3 +142,7 @@ Another difference is that methods related to Stream do not exist in `node:fs/pr
 In older versions of Node, it was common to use `__dirname` and other constants that referred to the project's file system. However, with the introduction of `"type": "module"`, these constants no longer work.
 
 Now, you should use strategies like `import.meta.url`.
+
+### Tip for Testing Regex
+
+A quick and practical way to test regular expressions is by using the [Regex Previewer](https://marketplace.visualstudio.com/items?itemName=chrmarti.regex) extension, which allows you to type text and see if the result of the regular expression is as expected.
